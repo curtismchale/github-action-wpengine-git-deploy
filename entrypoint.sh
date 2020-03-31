@@ -36,6 +36,7 @@ git config core.sshCommand "ssh -i $WPENGINE_SSH_KEY_PRIVATE_PATH -o UserKnownHo
 echo "ADDING GIT REMOTE"
 git remote add $WPENGINE_ENV git@$WPENGINE_HOST:$WPENGINE_ENV/$WPENGINE_ENVIRONMENT_NAME.git
 git remote -v
+git branch -a
 
 echo "PUSHING TO WP-ENGINE"
 git push -fu $WPENGINE_ENV HEAD:master
