@@ -37,6 +37,7 @@ echo "ADDING GIT REMOTE"
 git remote add $WPENGINE_ENV git@$WPENGINE_HOST:$WPENGINE_ENV/$WPENGINE_ENVIRONMENT_NAME.git
 git remote -v
 git branch -a
+git fetch --unshallow $WPENGINE_ENV
 
 echo "PUSHING TO WP-ENGINE"
 git push -fu $WPENGINE_ENV HEAD:master
