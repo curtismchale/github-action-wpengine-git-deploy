@@ -39,6 +39,6 @@ git remote -v
 git branch -a
 
 echo "PUSHING TO WP-ENGINE"
-git push -fu $WPENGINE_ENV HEAD:new-staging
+git push -fu $WPENGINE_ENV master
 
 echo "ALL DONE"
