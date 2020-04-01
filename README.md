@@ -24,7 +24,7 @@ jobs:
          fetch-depth: 0 # WPE rejects shallow pushes so we need to tell checkout to get all history
         
       - name: Deploy to WP-Engine
-        uses: curtismchale/github-action-wpengine-git-deploy@7 # Note, the `@7` is the release name use @master if you want the master branch of this action
+        uses: curtismchale/github-action-wpengine-git-deploy@8 # Note, the `@8` is the release name use @master if you want the master branch of this action
         env:
           WPENGINE_ENVIRONMENT_NAME: hotsauce # actually see the description below because you need to change this to your environment name.
           WPENGINE_SSH_KEY_PRIVATE: ${{ secrets.WPENGINE_SSH_KEY_PRIVATE }} # Configured in Repo/Settings/Secrets
